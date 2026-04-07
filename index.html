@@ -193,7 +193,7 @@ document.addEventListener('focusin', function(e) {
 //  STATE
 // ============================================================
 const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
-const CURRENT_MONTH = 2; // March
+const CURRENT_MONTH = new Date().getMonth(); // Auto-updates every month
 
 let state = {
   scriptUrl: localStorage.getItem('ajo_script_url') || 'https://script.google.com/macros/s/AKfycby448m7OslozCY16VZ5ewdPyJY5QWEG-PFSBFCTeLQonriaz3UGrYIKnUZnIoCblwYb/exec',
